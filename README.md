@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails c
 
-Things you may want to cover:
+SurveyElement.create(text: 'Test ding', type: 'SingleChoiceQuestion')
+Answer.create(survey_question: SurveyElement.first)
 
-* Ruby version
+kill console
 
-* System dependencies
+rails c
 
-* Configuration
+Answer.first.survey_question
+=> nil
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
